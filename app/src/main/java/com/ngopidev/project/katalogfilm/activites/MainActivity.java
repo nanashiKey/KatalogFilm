@@ -1,14 +1,16 @@
-package com.ngopidev.project.katalogfilm;
+package com.ngopidev.project.katalogfilm.activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.ngopidev.project.katalogfilm.R;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_splash);
+        setContentView(R.layout.activity_main);
     }
 }

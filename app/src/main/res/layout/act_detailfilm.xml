@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/tvJudulFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Judul Film"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:id="@+id/tvPenulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:text="nama penulis"
+        android:textAlignment="textEnd"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="disini nanti akan ada deskripsi film"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="16sp"/>
+</LinearLayout>
