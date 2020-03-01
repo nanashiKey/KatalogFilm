@@ -11,6 +11,7 @@ public class PrefsHelper {
     private SharedPreferences shared;
     private Context ctx;
     private String sharedName = "KatalogFILM";
+    private String statusLogin = "LOGINSTAT";
 
     private static PrefsHelper instance;
 
@@ -24,4 +25,15 @@ public class PrefsHelper {
         this.ctx = ctx;
         this.shared = ctx.getSharedPreferences(sharedName, Context.MODE_PRIVATE);
     }
+
+    public void setStatusLogin(boolean status){
+        SharedPreferences.Editor editor = shared.edit();
+        editor.putBoolean(statusLogin, status);
+        editor.apply();
+    }
+
+    public boolean getStatusLogin(){
+        return shared.getBoolean(statusLogin, false);
+    }
+
 }
